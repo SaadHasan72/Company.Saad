@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Coompany.Saad.DAL.Data.Contexts
 {
 
-    internal class CompanyDBContext : DbContext
+    public class CompanyDBContext : DbContext
     {
         public CompanyDBContext() : base() 
         {
