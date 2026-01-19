@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Coompany.Saad.DAL.Data.Configrations
 {
-    internal class DepartmentConfigrations : IEntityTypeConfiguration<Department>
+    public class DepartmentConfigrations : IEntityTypeConfiguration<Department>
     {
         public void Configure(EntityTypeBuilder<Department> builder)
         {
-            builder.Property(d=>d.Id).UseIdentityColumn(10,10);
+            builder.Property(d=>d.Id).UseIdentityColumn(10,10);  
         }
     }
 }
